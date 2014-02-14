@@ -1,10 +1,8 @@
-#include <iostream>
-
-#define VERSION "0.0.0"
+#include "command/Help.h"
 
 int main(int argc, char* argv[])
 {
-    std::cout << "CLU v" << VERSION << std::endl;
+    command::Help().execute();
     
     return 0;
 }
