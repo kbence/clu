@@ -6,6 +6,10 @@ using namespace std;
 
 namespace command {
 
+Help::Help():
+    Command("help")
+{}
+
 void Help::execute()
 {
     const char* indent = "    ";
