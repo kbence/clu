@@ -5,6 +5,9 @@ CLU_OBJ = $(CLU_SRC:.cpp=.o)
 
 all: clu
 
+clean:
+	rm -f clu $(CLU_OBJ)
+
 clu: $(CLU_OBJ)
 	g++ $^ -o $@
 
